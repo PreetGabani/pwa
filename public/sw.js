@@ -22,8 +22,8 @@ this.addEventListener("fetch", (event) => {
     console.log("url",event.request.url);
 
     if (!navigator.onLine) {
-
-        if (event.request.url === 'http://localhost:3000/static/js/bundle.js') {
+        // http://localhost:3000/static/js/bundle.js
+        if (event.request.url === 'https://progressive-web-app-68e60.web.app/manifest.json') {
             event.waitUntil(
                 this.registration.showNotification("Notification", {
                     body: "Internet is not Working",

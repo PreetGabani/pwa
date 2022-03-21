@@ -10,7 +10,7 @@ const Record = () => {
 	const [data, setData] = useState([]);
 	const [totaldata, setTotalData] = useState([]);
 	const [page, setPage] = useState(1);
-	const [dataPerPage, setDataPerPage] = useState(100);
+	const [dataPerPage, setDataPerPage] = useState(10);
 	const [loading, setLoading] = useState(true);
 	const [mode, setMode] = useState('online')
 
